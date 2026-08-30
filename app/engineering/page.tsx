@@ -1,0 +1,12 @@
+import { Cog, Gauge, Hammer, Lightbulb, RotateCw, Wrench } from 'lucide-react';
+import { Footer, Header, PageIntro, PhotoPlaceholder } from '@/components/site-shell';
+
+const lessons = [
+  {icon:Cog,title:'Gears',text:'Students discover how teeth, size, and direction work together to move a machine.'},
+  {icon:Wrench,title:'Levers',text:'Everyday objects become experiments in force, balance, and mechanical advantage.'},
+  {icon:Hammer,title:'Simple machines',text:'Hands-on challenges make pulleys, wheels, axles, and inclined planes feel intuitive.'},
+  {icon:RotateCw,title:'Motion',text:'We trace how a push becomes movement through mechanisms students can see and touch.'},
+  {icon:Gauge,title:'Design challenges',text:'Students test an idea, notice what happens, and improve it—the real rhythm of engineering.'},
+  {icon:Lightbulb,title:'Curiosity',text:'Every lesson makes room for the best engineering question: “What happens if…?”'},
+];
+export default function Engineering(){return <main><Header/><PageIntro eyebrow="What we teach" title="Engineering you can hold in your hands."><p>Our short, interactive lessons turn mechanical concepts into experiments young learners can understand, change, and explain.</p></PageIntro><section className="mx-auto grid max-w-7xl gap-5 px-5 pb-24 sm:grid-cols-2 lg:grid-cols-3 md:px-10">{lessons.map(({icon:Icon,title,text},i)=><article key={title} className={`rounded-[1.75rem] border-2 border-black p-7 ${i===0?'bg-red-600 text-white':'bg-white'}`}><Icon className="mb-8 h-9 w-9"/><h2 className="text-2xl font-black">{title}</h2><p className={`mt-3 leading-relaxed ${i===0?'text-red-50':'text-zinc-600'}`}>{text}</p></article>)}</section><section className="mx-auto grid max-w-7xl gap-12 px-5 pb-24 md:grid-cols-2 md:items-center md:px-10"><PhotoPlaceholder label="Students building together"/><div><p className="text-xs font-black uppercase tracking-[.2em] text-red-600">How a visit works</p><h2 className="mt-4 text-4xl font-black tracking-tight">Small lesson. Big spark.</h2><ol className="mt-7 space-y-5">{['We coordinate a time and age-appropriate topic with the teacher.','Our student volunteers bring the lesson and hands-on activity.','Students explore, ask questions, and leave seeing their world differently.'].map((x,i)=><li key={x} className="flex gap-4"><b className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-black text-white">{i+1}</b><span className="pt-1 font-medium text-zinc-700">{x}</span></li>)}</ol></div></section><Footer/></main>}

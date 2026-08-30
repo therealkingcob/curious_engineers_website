@@ -29,6 +29,10 @@ yarn-error.log*
 # local environment
 .env*
 
+# local image conversion workspace
+.image-tools/
+.working-assets/
+
 # deployment and generated files
 .vercel
 next-env.d.ts

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowRight, Mail, Sparkles } from 'lucide-react';
 import { Footer, Header } from '@/components/site-shell';
 
@@ -20,8 +21,8 @@ export default function Home() {
           </div>
         </div>
         <div className="relative mx-auto w-full max-w-lg">
-          <div className="photo-placeholder relative aspect-[4/5] rotate-[2deg] overflow-hidden rounded-[2rem] border-2 border-[#171717] bg-[#f2eee5] shadow-[10px_10px_0_#e21b2d]">
-            <div className="absolute inset-0 grid place-items-center p-8 text-center"><div><span className="mx-auto mb-5 grid h-16 w-16 place-items-center rounded-full border-2 border-dashed border-red-600 text-3xl">⚙</span><p className="font-black uppercase tracking-[.14em]">Classroom photo coming soon</p><p className="mt-2 text-sm text-zinc-500">A future snapshot of curiosity in motion.</p></div></div>
+          <div className="relative aspect-[4/5] rotate-[2deg] overflow-hidden rounded-[2rem] border-2 border-[#171717] bg-[#f2eee5] shadow-[10px_10px_0_#e21b2d]">
+            <Image src="/photos/king-3.webp" alt="Curious Engineers volunteers helping elementary students build a hands-on project" fill priority sizes="(max-width: 768px) 90vw, 40vw" className="object-cover" />
           </div>
           <div className="absolute -bottom-5 -left-3 rotate-[-4deg] border-2 border-[#171717] bg-white px-5 py-4 shadow-[4px_4px_0_#171717]"><span className="block text-3xl font-black text-red-600">30 min</span><span className="text-xs font-bold uppercase tracking-wider">to spark a new interest</span></div>
         </div>

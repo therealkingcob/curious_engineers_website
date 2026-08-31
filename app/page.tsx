@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight, Mail, Sparkles } from 'lucide-react';
 import { Footer, Header } from '@/components/site-shell';
@@ -26,13 +25,13 @@ export default function Home() {
             moments.
           </p>
           <div className="mt-9 flex flex-wrap gap-4">
-            <Link
+            <a
               href={sitePath('/contact')}
               className="group inline-flex items-center gap-3 rounded-full bg-[#171717] px-6 py-4 font-extrabold text-white transition hover:bg-red-600"
             >
               Bring us to your school{' '}
               <ArrowRight className="h-5 w-5 transition group-hover:translate-x-1" />
-            </Link>
+            </a>
             <a
               href="mailto:curiousengineerssd@gmail.com"
               className="inline-flex items-center gap-3 rounded-full border-2 border-[#171717] bg-white px-6 py-4 font-extrabold"
@@ -76,12 +75,12 @@ export default function Home() {
               student realizing they can change how something works. We make
               complex ideas tangible so curiosity has somewhere to go.
             </p>
-            <Link
+            <a
               href={sitePath('/engineering')}
               className="mt-8 inline-flex items-center gap-2 font-extrabold text-red-400"
             >
               Explore our lessons <ArrowRight className="h-5 w-5" />
-            </Link>
+            </a>
           </div>
         </div>
       </section>

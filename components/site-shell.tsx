@@ -1,10 +1,9 @@
-import Link from 'next/link';
 import { Menu } from 'lucide-react';
 import { sitePath } from '@/lib/site-path';
 
 export function Logo() {
   return (
-    <Link
+    <a
       href={sitePath('/')}
       className="flex items-center gap-3"
       aria-label="Curious Engineers home"
@@ -17,7 +16,7 @@ export function Logo() {
         <br />
         <span className="text-red-600">Engineers</span>
       </span>
-    </Link>
+    </a>
   );
 }
 
@@ -29,16 +28,16 @@ export function Header() {
         className="hidden items-center gap-7 text-sm font-bold md:flex"
         aria-label="Primary navigation"
       >
-        <Link href={sitePath('/engineering')}>What we teach</Link>
-        <Link href={sitePath('/people')}>People</Link>
-        <Link href={sitePath('/feedback')}>Teacher feedback</Link>
+        <a href={sitePath('/engineering')}>What we teach</a>
+        <a href={sitePath('/people')}>People</a>
+        <a href={sitePath('/feedback')}>Teacher feedback</a>
       </nav>
-      <Link
+      <a
         href={sitePath('/contact')}
         className="rounded-full bg-red-600 px-5 py-3 text-sm font-extrabold text-white shadow-[3px_3px_0_#171717] hover:-translate-y-0.5"
       >
         Get in touch
-      </Link>
+      </a>
       <details className="relative md:hidden">
         <summary
           className="ml-2 grid h-11 w-11 cursor-pointer list-none place-items-center rounded-full border-2 border-black bg-white"
@@ -47,24 +46,24 @@ export function Header() {
           <Menu />
         </summary>
         <nav className="absolute right-0 top-14 z-50 w-56 rounded-2xl border-2 border-black bg-white p-3 font-bold shadow-[5px_5px_0_#e21b2d]">
-          <Link
+          <a
             className="block rounded-xl p-3 hover:bg-red-50"
             href={sitePath('/engineering')}
           >
             What we teach
-          </Link>
-          <Link
+          </a>
+          <a
             className="block rounded-xl p-3 hover:bg-red-50"
             href={sitePath('/people')}
           >
             People
-          </Link>
-          <Link
+          </a>
+          <a
             className="block rounded-xl p-3 hover:bg-red-50"
             href={sitePath('/feedback')}
           >
             Teacher feedback
-          </Link>
+          </a>
         </nav>
       </details>
     </header>
@@ -85,11 +84,11 @@ export function Footer() {
           </a>
         </div>
         <div className="flex flex-wrap gap-5 text-sm font-bold">
-          <Link href={sitePath('/')}>Home</Link>
-          <Link href={sitePath('/engineering')}>Engineering</Link>
-          <Link href={sitePath('/people')}>People</Link>
-          <Link href={sitePath('/feedback')}>Feedback</Link>
-          <Link href={sitePath('/contact')}>Contact</Link>
+          <a href={sitePath('/')}>Home</a>
+          <a href={sitePath('/engineering')}>Engineering</a>
+          <a href={sitePath('/people')}>People</a>
+          <a href={sitePath('/feedback')}>Feedback</a>
+          <a href={sitePath('/contact')}>Contact</a>
         </div>
       </div>
     </footer>

@@ -1,14 +1,8 @@
-const repositoryName = process.env.GITHUB_REPOSITORY?.split('/')[1];
-const repositoryOwner = process.env.GITHUB_REPOSITORY?.split('/')[0];
-
-export const siteBasePath =
-  process.env.GITHUB_PAGES === 'true' && repositoryName
-    ? `/${repositoryName}`
-    : '';
+export const siteBasePath = '';
 
 export const siteUrl =
-  process.env.GITHUB_PAGES === 'true' && repositoryOwner && repositoryName
-    ? `https://${repositoryOwner}.github.io`
+  process.env.GITHUB_PAGES === 'true'
+    ? 'https://curiousengineers.org'
     : 'http://localhost:3000';
 
 export function sitePath(path: string) {

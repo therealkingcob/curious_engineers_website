@@ -22,6 +22,10 @@ export const metadata: Metadata = {
   title: 'Curious Engineers | Hands-on engineering for young minds',
   description:
     'Student-led, hands-on engineering lessons for schools and youth programs in San Diego.',
+  icons: {
+    icon: [{ url: sitePath('/favicon.svg'), type: 'image/svg+xml' }],
+    shortcut: [sitePath('/favicon.svg')],
+  },
   openGraph: {
     title: 'Curious Engineers',
     description: 'Big ideas. Small hands.',

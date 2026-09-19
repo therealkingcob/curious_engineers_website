@@ -11,26 +11,26 @@ import { sitePath } from '@/lib/site-path';
 const stats = [
   {
     value: '6',
-    label: 'listed volunteers',
-    note: 'People named on the current outreach roster.',
+    label: 'volunteers',
+    note: 'Young people sharing what they love to build.',
     icon: Users,
   },
   {
     value: '23',
     label: 'classroom visits',
-    note: 'Visit records currently logged in the outreach sheet.',
+    note: 'Hands-on lessons shaped around questions, testing, and discovery.',
     icon: School,
   },
   {
     value: '5',
     label: 'school sites',
-    note: 'Distinct schools represented in the current visit log.',
+    note: 'Schools where students have explored engineering together.',
     icon: GraduationCap,
   },
   {
     value: '7',
     label: 'activity formats',
-    note: 'Different activities recorded across the visits.',
+    note: 'From gears and levers to paper bridges and motion.',
     icon: BookOpen,
   },
 ];
@@ -57,9 +57,9 @@ export default function Impact() {
             </h2>
           </div>
           <p className="max-w-md text-sm font-medium leading-relaxed text-zinc-600 md:text-right">
-            We measure what the outreach log makes visible: the people who show
-            up, the classrooms we visit, and the activities that make
-            engineering feel possible.
+            We celebrate what the work makes possible: the people who show up,
+            the classrooms we visit, and the activities that make engineering
+            feel possible.
           </p>
         </div>
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -83,9 +83,6 @@ export default function Impact() {
             </article>
           ))}
         </div>
-        <p className="mt-6 text-xs font-black uppercase tracking-[.16em] text-zinc-500">
-          Figures reflect the current Park Village Engineering outreach log.
-        </p>
       </section>
 
       <section className="bg-[#171717] text-white">

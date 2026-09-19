@@ -29,6 +29,7 @@ export function Header() {
         aria-label="Primary navigation"
       >
         <a href={sitePath('/engineering')}>What we teach</a>
+        <a href={sitePath('/impact')}>Our impact</a>
         <a href={sitePath('/people')}>People</a>
         <a href={sitePath('/feedback')}>Teacher feedback</a>
       </nav>
@@ -51,6 +52,12 @@ export function Header() {
             href={sitePath('/engineering')}
           >
             What we teach
+          </a>
+          <a
+            className="block rounded-xl p-3 hover:bg-red-50"
+            href={sitePath('/impact')}
+          >
+            Our impact
           </a>
           <a
             className="block rounded-xl p-3 hover:bg-red-50"
@@ -86,6 +93,7 @@ export function Footer() {
         <div className="flex flex-wrap gap-5 text-sm font-bold">
           <a href={sitePath('/')}>Home</a>
           <a href={sitePath('/engineering')}>Engineering</a>
+          <a href={sitePath('/impact')}>Impact</a>
           <a href={sitePath('/people')}>People</a>
           <a href={sitePath('/feedback')}>Feedback</a>
           <a href={sitePath('/contact')}>Contact</a>

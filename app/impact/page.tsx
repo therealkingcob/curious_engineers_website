@@ -10,27 +10,27 @@ import { sitePath } from '@/lib/site-path';
 
 const stats = [
   {
-    value: '12+',
-    label: 'student volunteers',
-    note: 'Young people sharing what they love to build.',
+    value: '6',
+    label: 'listed volunteers',
+    note: 'People named on the current outreach roster.',
     icon: Users,
   },
   {
-    value: '500+',
-    label: 'students reached',
-    note: 'Curious learners who have explored engineering with us.',
-    icon: GraduationCap,
-  },
-  {
-    value: '20+',
+    value: '23',
     label: 'classroom visits',
-    note: 'Lessons shaped around questions, testing, and discovery.',
+    note: 'Visit records currently logged in the outreach sheet.',
     icon: School,
   },
   {
-    value: '4',
-    label: 'lesson themes',
-    note: 'Gears, levers, motion, and design challenges to explore.',
+    value: '5',
+    label: 'school sites',
+    note: 'Distinct schools represented in the current visit log.',
+    icon: GraduationCap,
+  },
+  {
+    value: '7',
+    label: 'activity formats',
+    note: 'Different activities recorded across the visits.',
     icon: BookOpen,
   },
 ];
@@ -57,8 +57,9 @@ export default function Impact() {
             </h2>
           </div>
           <p className="max-w-md text-sm font-medium leading-relaxed text-zinc-600 md:text-right">
-            We measure what matters: the people who show up, the students who
-            get to try, and the moments that make engineering feel possible.
+            We measure what the outreach log makes visible: the people who show
+            up, the classrooms we visit, and the activities that make
+            engineering feel possible.
           </p>
         </div>
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -82,6 +83,9 @@ export default function Impact() {
             </article>
           ))}
         </div>
+        <p className="mt-6 text-xs font-black uppercase tracking-[.16em] text-zinc-500">
+          Figures reflect the current Park Village Engineering outreach log.
+        </p>
       </section>
 
       <section className="bg-[#171717] text-white">

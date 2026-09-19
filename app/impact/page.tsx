@@ -10,7 +10,7 @@ import { sitePath } from '@/lib/site-path';
 
 const stats = [
   {
-    value: '6',
+    value: '12',
     label: 'volunteers',
     note: 'Young people sharing what they love to build.',
     icon: Users,

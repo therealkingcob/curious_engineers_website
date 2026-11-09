@@ -1,6 +1,19 @@
 import Image from 'next/image';
 import { sitePath } from '@/lib/site-path';
 import { Footer, Header, PageIntro } from '@/components/site-shell';
+
+const volunteerInstructors = [
+  'Oliver Wang',
+  'Shaan Nainani',
+  'Yibin Cai',
+  'Rohan Banerji',
+  'Lucas Ding',
+  'Mihir Pulhabhottla',
+  'Pari Patel',
+  'Emi Arakawa',
+  'Aiden Liu',
+];
+
 export default function People() {
   return (
     <main>
@@ -34,6 +47,45 @@ export default function People() {
             programming, and mechanical design.
           </p>
         </article>
+      </section>
+      <section className="mx-auto max-w-7xl px-5 pb-16 md:px-10">
+        <div className="mb-8 max-w-3xl">
+          <p className="text-xs font-black uppercase tracking-[.2em] text-red-600">
+            Leadership
+          </p>
+          <h2 className="mt-3 text-4xl font-black tracking-tight">
+            The team behind the workshops.
+          </h2>
+        </div>
+        <article className="rounded-[2rem] border-2 border-black bg-white p-8 shadow-[8px_8px_0_#171717] md:p-10">
+          <p className="text-xs font-black uppercase tracking-[.18em] text-red-600">
+            Co-Founder &amp; Vice President
+          </p>
+          <h3 className="mt-3 text-3xl font-black">Avi Patel</h3>
+        </article>
+      </section>
+      <section className="mx-auto max-w-7xl px-5 pb-16 md:px-10">
+        <div className="mb-8 max-w-3xl">
+          <p className="text-xs font-black uppercase tracking-[.2em] text-red-600">
+            Our volunteers
+          </p>
+          <h2 className="mt-3 text-4xl font-black tracking-tight">
+            Volunteer instructors.
+          </h2>
+        </div>
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {volunteerInstructors.map((name) => (
+            <article
+              key={name}
+              className="rounded-[1.5rem] border-2 border-black bg-white p-6 shadow-[5px_5px_0_#171717]"
+            >
+              <h3 className="text-xl font-black">{name}</h3>
+              <p className="mt-2 text-sm font-bold text-zinc-600">
+                Volunteer Instructor
+              </p>
+            </article>
+          ))}
+        </div>
       </section>
       <section className="mx-auto max-w-7xl px-5 pb-24 md:px-10">
         <div className="rounded-[2rem] border-2 border-black bg-white p-8 shadow-[8px_8px_0_#171717] md:p-12">
